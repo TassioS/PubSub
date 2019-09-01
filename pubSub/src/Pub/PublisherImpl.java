@@ -9,6 +9,6 @@ package Pub;
  *
  * @author Tassio
  */
-public class PublisherImpl {
+public class PublisherImpl implements Publisher{
     
 }

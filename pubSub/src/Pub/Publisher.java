@@ -9,6 +9,6 @@ package Pub;
  *
  * @author Tassio
  */
-public class Publisher {
+public interface Publisher {
     
 }

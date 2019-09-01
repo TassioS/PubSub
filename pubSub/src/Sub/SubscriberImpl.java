@@ -9,6 +9,6 @@ package Sub;
  *
  * @author Tassio
  */
-public class SubscriberImpl {
+public class SubscriberImpl implements Subscriber{
     
 }

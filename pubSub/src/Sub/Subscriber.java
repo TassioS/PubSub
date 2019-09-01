@@ -9,6 +9,6 @@ package Sub;
  *
  * @author Tassio
  */
-public class Subscriber {
+public interface Subscriber {
     
 }
