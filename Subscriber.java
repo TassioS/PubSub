@@ -18,8 +18,8 @@ public class Subscriber {
       saida.writeObject(aux);
       
       ObjectInputStream entrada = new ObjectInputStream(cliente.getInputStream());
-      Object data_atual = (Object) entrada.readObject();
-      JOptionPane.showMessageDialog(null,"Data recebida do servidor:" + data_atual.toString());
+      Object tipo_menssagem = (Object) entrada.readObject();
+      JOptionPane.showMessageDialog(null,"Data recebida do servidor:" + tipo_menssagem.toString());
 
       
       
