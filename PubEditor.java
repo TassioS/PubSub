@@ -7,15 +7,16 @@ import static pubsubs.ServidorBroke.Futebol;
 
 public class PubEditor extends ServidorBroke {
     
-    
-    public void Editar(){
-        
+    public void Editar(int N){
+     
        int i=0;
-       while(i<4){
-       System.out.println("Digite calssificaçao da Noticia Sobre: Futebol 0, Politica 1, economia 2  Educaçao 3");         Scanner no = new Scanner(System.in); 
+       int f=0, p=0,e=0,ed=0,o=0;
+       while(i<N){
+       System.out.println("Digite calssificaçao da Noticia Sobre: Futebol 0, Politica 1, economia 2  Educaçao 3");         
+       Scanner no = new Scanner(System.in); 
 
        String nm= no.next();
-       int classifica = Integer.parseInt(nm); // Caso você queira tipo int, que é o usual.
+       int classifica = Integer.parseInt(nm); // inteiro que classifica noticia
 
        Scanner nt = new Scanner(System.in); 
 
@@ -23,22 +24,46 @@ public class PubEditor extends ServidorBroke {
 
        String not= nt.next();
 
-int index=0;
 switch(classifica) {
   case 0:
-    Futebol[index] = not;
+    if(Futebol.length==f){
+       System.out.println("Espaço de noticias Futebol completo");
+       continue;
+    }      
+    Futebol[f] = not;
+    f++;
     break;
     case 1:
-    Politica[index] = not;
+      if(Politica.length==p){
+       System.out.println("Espaço de noticias Politica completo");
+       continue;
+    }     
+    Politica[p] = not;
+    p++;
     break;
     case 2:
-    Economia[index] = not;
+          if(Economia.length==e){
+       System.out.println("Espaço de noticias Economia completo");
+       continue;
+    } 
+    Economia[e] = not;
+    e++;
     break;
     case 3:
-    Educacao[index] = not;
+          if(Educacao.length==ed){
+       System.out.println("Espaço de noticias Economia completo");
+       continue;
+    } 
+    Educacao[ed] = not;
+    ed++;
     break;
   default:
-       Outros[index] = not;
+        if(Outros.length==1){
+       System.out.println("Espaço de noticias Outras completo");
+       continue;
+    } 
+       Outros[o] = not;
+      o++;
 }      
        i++;
       

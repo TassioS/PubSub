@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public class Subscriber {
   public static void main(String[] args) {
     try {
-      Socket cliente = new Socket("192.168.0.107",12345);
+      Socket cliente = new Socket("200.235.93.4",12345);
       
       int aux = 1;
       ObjectOutputStream saida = new ObjectOutputStream(cliente.getOutputStream());
